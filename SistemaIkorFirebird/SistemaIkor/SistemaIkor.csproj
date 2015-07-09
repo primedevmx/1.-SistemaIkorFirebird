@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0AA867AF-5A9A-4E0F-AED5-2D0E0A469D9A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SistemaIkor</RootNamespace>
+    <AssemblyName>SistemaIkor</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>ftp://creandoproyectosexitosos.com/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://creandoproyectosexitosos.com/georgeftpp/</InstallUrl>
+    <PublisherName>IKOR</PublisherName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>index.htm</WebPage>
+    <ApplicationRevision>36</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>System.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>314EFD38280A240D4ACDE28EF5E7D03DAEAB58A1</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>SistemaIkor_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Borland.Data.AdoDbxClient, Version=11.0.5000.0, Culture=neutral, PublicKeyToken=91d62ebb5b0d1b1b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Embarcadero\InterBase_ADO.NET\Borland.Data.AdoDbxClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Borland.Data.DbxCommonDriver, Version=11.0.5000.0, Culture=neutral, PublicKeyToken=91d62ebb5b0d1b1b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Embarcadero\InterBase_ADO.NET\Borland.Data.DbxCommonDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="Borland.Data.DBXInterBaseDriver, Version=16.0.0.0, Culture=neutral, PublicKeyToken=91d62ebb5b0d1b1b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Embarcadero\InterBase_ADO.NET\Borland.Data.DBXInterBaseDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="Borland.Delphi, Version=11.0.5000.9245, Culture=neutral, PublicKeyToken=91d62ebb5b0d1b1b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Embarcadero\InterBase_ADO.NET\Borland.Delphi.dll</HintPath>
+    </Reference>
+    <Reference Include="Borland.VclDbRtl, Version=11.0.5000.9245, Culture=neutral, PublicKeyToken=91d62ebb5b0d1b1b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Embarcadero\InterBase_ADO.NET\Borland.VclDbRtl.dll</HintPath>
+    </Reference>
+    <Reference Include="Borland.VclRtl, Version=11.0.5000.9245, Culture=neutral, PublicKeyToken=91d62ebb5b0d1b1b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Embarcadero\InterBase_ADO.NET\Borland.VclRtl.dll</HintPath>
+    </Reference>
+    <Reference Include="MdiTabStrip">
+      <HintPath>..\..\..\MdiTabStrip.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking">
+      <HintPath>..\..\..\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clases\clSeguridad.cs" />
+    <Compile Include="Clases\mSeguridad.cs" />
+    <Compile Include="FirebirdHelperADO.cs" />
+    <Compile Include="Formularios\frmAdminReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmAdminReportes.Designer.cs">
+      <DependentUpon>frmAdminReportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmConfiguraBDs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmConfiguraBDs.Designer.cs">
+      <DependentUpon>frmConfiguraBDs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmEliminaReporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmEliminaReporte.Designer.cs">
+      <DependentUpon>frmEliminaReporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmParametrosApp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmParametrosApp.Designer.cs">
+      <DependentUpon>frmParametrosApp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmRegistraServidor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmRegistraServidor.Designer.cs">
+      <DependentUpon>frmRegistraServidor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmTestConection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmTestConection.Designer.cs">
+      <DependentUpon>frmTestConection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmVistaReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmVistaReportes.Designer.cs">
+      <DependentUpon>frmVistaReportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenuConfiguracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuConfiguracion.designer.cs">
+      <DependentUpon>frmMenuConfiguracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenuInicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuInicio.designer.cs">
+      <DependentUpon>frmMenuInicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipal.designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ToolWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolWindow.designer.cs">
+      <DependentUpon>ToolWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\frmConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\frmConsulta.designer.cs">
+      <DependentUpon>frmConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SplashScreenFormV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\SplashScreenFormV2.Designer.cs">
+      <DependentUpon>SplashScreenFormV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\uctrlTablaConFiltro.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\uctrlTablaConFiltro.designer.cs">
+      <DependentUpon>uctrlTablaConFiltro.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Formularios\frmAdminReportes.resx">
+      <DependentUpon>frmAdminReportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmConfiguraBDs.resx">
+      <DependentUpon>frmConfiguraBDs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmEliminaReporte.resx">
+      <DependentUpon>frmEliminaReporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmParametrosApp.resx">
+      <DependentUpon>frmParametrosApp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmRegistraServidor.resx">
+      <DependentUpon>frmRegistraServidor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmTestConection.resx">
+      <DependentUpon>frmTestConection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmVistaReportes.resx">
+      <DependentUpon>frmVistaReportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuConfiguracion.resx">
+      <DependentUpon>frmMenuConfiguracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuInicio.resx">
+      <DependentUpon>frmMenuInicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ToolWindow.resx">
+      <DependentUpon>ToolWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\frmConsulta.resx">
+      <DependentUpon>frmConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\SplashScreenFormV2.resx">
+      <DependentUpon>SplashScreenFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\uctrlTablaConFiltro.resx">
+      <DependentUpon>uctrlTablaConFiltro.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="dbxadapter.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="dbxdrivers.ini">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Content Include="Resources\manual.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="SistemaIkor_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete-321.png" />
+    <None Include="Resources\approval-32.png" />
+    <None Include="Resources\approval-48.png" />
+    <Content Include="dbxint.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="gds32.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\info-32.png" />
+    <None Include="Resources\info-321.png" />
+    <Content Include="Resources\question_shield-32.png" />
+    <None Include="Resources\question_shield-321.png" />
+    <Content Include="System.ico" />
+    <None Include="Resources\add_database-32.png" />
+    <None Include="Resources\accept_database-32.png" />
+    <Content Include="Resources\barTOP.png" />
+    <Content Include="Resources\bg.JPG" />
+    <Content Include="Resources\bgbar.JPG" />
+    <Content Include="Resources\bgBlue1.jpg" />
+    <Content Include="Resources\bgBlue2.png" />
+    <Content Include="Resources\bgBlue3.jpg" />
+    <Content Include="Resources\bgDark1.JPG" />
+    <Content Include="Resources\bgDark2.png" />
+    <Content Include="Resources\bgOrange1.jpg" />
+    <Content Include="Resources\bgRed1.png" />
+    <None Include="Resources\top_navigation_toolbar-26.png" />
+    <None Include="Resources\View_Details-32.png" />
+    <None Include="Resources\Captura.ico" />
+    <None Include="Resources\Configure alt 1.ico" />
+    <None Include="Resources\database-32.png" />
+    <Content Include="Resources\delete-26.png" />
+    <Content Include="Resources\delete-32.png" />
+    <None Include="Resources\delete_file-32.png" />
+    <None Include="Resources\delete_file-26.png" />
+    <None Include="Resources\delete_database-32.png" />
+    <Content Include="Resources\descarga.jpg" />
+    <None Include="Resources\engineering-32.png" />
+    <None Include="Resources\excel-32.png" />
+    <Content Include="Resources\fondo.png" />
+    <None Include="Resources\ikor-redes-sociales.jpg" />
+    <None Include="Resources\ikor %281%29.ico" />
+    <None Include="Resources\Libraries alt.ico" />
+    <Content Include="Resources\fondoIKOR.png" />
+    <None Include="Resources\fondoIKOR1.png" />
+    <None Include="Resources\fondoIKOR2.png" />
+    <None Include="Resources\fondoIKOR3.PNG" />
+    <None Include="Resources\image_file-26.png" />
+    <None Include="Resources\monitor-32.png" />
+    <Content Include="Resources\orange gradient box tall 2.jpg" />
+    <None Include="Resources\redim.jpg" />
+    <None Include="Resources\Shortcuts.ico" />
+    <Content Include="Resources\save_as-26.png" />
+    <Content Include="Resources\ToolboxWindow.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
